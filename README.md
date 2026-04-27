@@ -14,4 +14,4 @@ In the second semester, I mainly focused on hardware and building the physical c
 
 Due to these issues, I made the decision to switch to a DFRobot L298N motor driver which provided a more reliable and compatible solution. After troubleshooting wiring problems and replacing faulty components, I was able to successfully get the system working.
 
-Now I am to focus on getting the sensors linked in with the code and soon enough move onto bluetooth control.
+With the hardware in place, I connected all sensors alongside Bluetooth control using the Dabble application. The ultrasonic sensor actively monitors the distance in behind the car and triggers a buzzer when an obstacle is detected within 10cm. The INA-219 power sensor measures the real-time power consumption of the system in watts, as well as estimating the remaining battery level based on the current voltage reading. The MMA8451 accelerometer detects whether the car is stationary or in motion. All of this data is displayed live on a website hosted by the ESP32 which updates every second. The car itself is controlled wirelessly via the Dabble gamepad over Bluetooth.
